@@ -17,16 +17,16 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16.x
-          cache: yarn
+          cache: npm
       - name: Setup Expo and EAS
         uses: expo/expo-github-action@v8
         with:
           eas-version: latest
           token: ${{ secrets.EXPO_TOKEN }}
       - name: Install dependencies
-        run: yarn install
+        run: npm install
       - name: Install expo CLI
-        run: yarn install -g expo-cli
+        run: npm install -g expo-cli
       - name: Publish on expo server
         run: eas build --profile preview --platform android
       - name: Update on Expo
