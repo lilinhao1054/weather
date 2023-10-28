@@ -1,0 +1,29 @@
+{
+  "cli": {
+    "version": ">= 5.6.0"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "env": {
+        "EXPO_PUBLIC_API_KEY": "42ef6982898eaac487a4dfb5608d38c2"
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "developmentClient": true,
+      "env": {
+        "EXPO_PUBLIC_API_KEY": "42ef6982898eaac487a4dfb5608d38c2"
+      }
+    },
+    "production": {
+      "env": {
+        "EXPO_PUBLIC_API_KEY": "42ef6982898eaac487a4dfb5608d38c2"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
