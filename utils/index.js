@@ -65,10 +65,12 @@ export const mapUviValueToString = (uvi) => {
 export const getLocalLocation = async () => {
   try {
     const { status } = await Location.requestForegroundPermissionsAsync();
+    console.log(status);
     if (status === "granted") {
       const location = await Location.getCurrentPositionAsync({
         timeInterval: 1000,
       });
+      console.log("location");
       return {
         lat: location.coords.latitude,
         lon: location.coords.longitude,
