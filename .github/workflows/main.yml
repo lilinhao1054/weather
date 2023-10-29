@@ -28,6 +28,6 @@ jobs:
       - name: Install expo CLI
         run: yarn global add expo-cli
       - name: Publish on expo server
-        run: eas build --profile preview --platform android
+        run: eas build --platform android
       - name: Update on Expo
         run: eas update --auto
