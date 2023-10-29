@@ -45,6 +45,12 @@
         "projectId": "af2fdf61-7b45-4e32-a40d-7e269627a4b6"
       }
     },
-    "owner": "fffzl"
+    "owner": "fffzl",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/af2fdf61-7b45-4e32-a40d-7e269627a4b6"
+    }
   }
 }

@@ -67,9 +67,7 @@ export const getLocalLocation = async () => {
     const { status } = await Location.requestForegroundPermissionsAsync();
     console.log(status);
     if (status === "granted") {
-      const location = await Location.getCurrentPositionAsync({
-        timeInterval: 1000,
-      });
+      const location = await Location.getLastKnownPositionAsync({});
       console.log("location");
       return {
         lat: location.coords.latitude,
