@@ -20,6 +20,9 @@
     "production": {
       "env": {
         "EXPO_PUBLIC_API_KEY": "42ef6982898eaac487a4dfb5608d38c2"
+      },
+      "android": {
+        "gradelCommand": ":app:assembleRelease"
       }
     }
   },
