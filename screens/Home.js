@@ -65,7 +65,6 @@ const Home = ({ route, navigation }) => {
             backgroundColor: "white",
             borderColor: "white",
             padding: 20,
-            paddingTop: 50,
           }}
           inputContainerStyle={{
             backgroundColor: "white",
